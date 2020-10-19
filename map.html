@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>Map</h1>
+        
+        <button onClick="ma()">Nhấn nào</button>
+        <p id="d1"></p>
+        
+        <script>
+            var so = [ 6,8,10,15];
+            
+            function ma(){
+                a = document.getElementById("d1");
+                a.innerHTML = so.map(tru);
+            }
+            
+            function tru(num){
+                return num - 5;
+            }
+        </script>
+    </body>
+</html>

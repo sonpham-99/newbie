@@ -1,0 +1,57 @@
+<html>
+    <body>
+        <h1> Dùng để sắp xếp các phần tử trong mảng</h1>
+        <h2>Sắp xếp chữ</h2>
+        <p>Coca, Dua, Banh, Anh</p>
+        
+        <button onClick="abc()">Thứ tự ABC</button>
+            <p id="a1"></p>
+        <button onClick="cba()">Thứ tự CBA</button>
+            <p id="a2"></p>
+        
+        <h2>Sắp xếp số</h2>
+        <p>9, 5, 1, 13, 2</p>
+        
+        <button onClick="nholon()">Thứ tự 123</button>
+            <p id="b1"></p>
+        <button onClick="lonnho()">Thứ tự 321</button>
+            <p id="b2"></p>
+        
+        <script>
+            /*sắp xếp chữ */
+            var a = ["Coca", "Dua","Banh","Anh"];
+            
+            function abc(){
+                a.sort();
+                document.getElementById("a1").innerHTML=a;
+            }
+            
+            function cba(){
+                a.sort();
+                a.reverse();
+                document.getElementById("a2").innerHTML=a;
+            }
+            
+            /*Sắp xếp số */
+            var b = [9,5,1,13,2];
+            
+            function cpnl(a,b){
+                return a-b;
+            }
+            
+            function cpln(a,b){
+                return b-a;
+            }
+            
+            function nholon(){
+                b.sort(cpnl);
+                document.getElementById("b1").innerHTML = b;
+            }
+            
+            function lonnho(){
+                b.sort(cpln);
+                document.getElementById("b2").innerHTML = b;
+            }
+        </script>
+    </body>
+</html>

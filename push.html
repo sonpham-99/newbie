@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1> Push cho ta thêm một item mới vào cuối mảng</h1>
+        
+        <button onClick="pu()">Nhấn nào</button>
+        <p id="d1"></p>
+        
+        <script>
+            var nuoc = ["Coca", "Pepsi", "Xaxi"];
+            document.getElementById("d1").innerHTML=nuoc;
+            
+            function pu(){
+                nuoc.push("Sting", "7Up");
+                document.getElementById("d1").innerHTML=nuoc;
+            }
+        </script>
+    </body>
+</html>

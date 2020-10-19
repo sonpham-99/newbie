@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>Foreach</h1>
+        
+        <p id="d1"></p>
+        
+        <script>
+            var doan = ["tao", "bo", "keo", "banh"];
+            doan.forEach(fe);
+            
+            function fe(item, index){
+                document.getElementById("d1").innerHTML += index + ": " + item + "<br>";
+            }
+        </script>
+    </body>
+</html>

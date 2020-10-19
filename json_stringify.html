@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>Chuyển đối tượng trong Javascript sang JSON cho dễ hiểu</h1>
+        
+        <p id="demo"></p>
+        
+        <button onClick="func()">Nhấn nào</button>
+        <p id="p1"></p>
+        
+        <script>
+        var dt = {name:"Huong", age:18};
+        var json = JSON.stringify(dt);
+        document.getElementById("demo").innerHTML = json;
+            
+        function func(){
+            var hm = {Name:"Lan Lan", Age:21, Gender:"Female"};
+            var d1 = JSON.stringify(hm);
+            document.getElementById("p1").innerHTML=d1;
+        }
+        </script>
+    </body>
+</html>

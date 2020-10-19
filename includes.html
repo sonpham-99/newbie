@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1>Includes là hàm để kiểm tra xem phần tử đưa vào có trong mảng hay không</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <Button onClick="gom()">Nhấn nào</Button>
+        <p id="a1"></p>
+
+        <script>
+                var word = ["Banh", "Keo", "Trai cay", "Nuoc"];
+                var n = word.includes("banh");
+                var m = word.includes("Trai cay");
+                document.getElementById("demo").innerHTML=n;
+                document.getElementById("demo1").innerHTML=m;
+            
+                function gom(){
+                    var chu = ["Banh", "Keo"];
+                    var a = chu.includes("Keo");
+                    document.getElementById("a1").innerHTML=a;
+                }
+        </script>
+    </body>
+</html>

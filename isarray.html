@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>Kiểm tra xem giá trị truyền vào có phải là mảng</h1>
+        <p id="a"></p>
+        <p id="b"></p>
+        
+        <script>
+        var ar=["banh", "keo"];
+        var ka = ('nuoc', 'duong');
+        
+        var kt = document.getElementById("a");
+        var kt2 = document.getElementById("b");
+        kt.innerHTML=Array.isArray(ar);
+        kt2.innerHTML=Array.isArray(ka);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <body>
+        
+        <h1>Hàm length dùng để đếm số lượng phần tử có trong mảng</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <button onClick="func()">Nhấn nào</button>
+        <p id="t1"></p>
+        <p id="t2"></p>
+
+        <script>
+        var dem = "Xin chào banh";
+        var dem1=["Xin chào", "banh"];
+        var n = dem.length;
+        var m = dem1.length;
+        document.getElementById("demo").innerHTML = "Số phần tử trong mảng là: " + n;
+        document.getElementById("demo1").innerHTML = "Số phần tử trong mảng là: " + m;
+        
+            
+        function func(){
+            var nut = "Chào bạn";
+            var nut2 = ["Chào", "bạn"];
+            var a1 = nut.length;
+            var a2 = nut2.length;
+            document.getElementById("t1").innerHTML=a1;
+            document.getElementById("t2").innerHTML=a2;
+        }
+        </script>
+    </body>
+</html>

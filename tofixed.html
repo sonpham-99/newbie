@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <h1>toFixed chuyển 1 số thành kiểu chuỗi, giữ lại chữ số thập phân</h1>
+        
+        <p>10.586</p>
+        
+        <button onClick="s1()">1 số thập phân</button>
+        <p id="a1"></p>
+        <button onClick="s2()">2 số thập phân</button>
+        <p id="a2"></p>
+        <button onClick="s3()">3 số thập phân</button>
+        <p id="a3"></p>
+        
+        <script>
+            var n = 10.586;
+        function s1(){
+            var n1=n.toFixed(1);
+            document.getElementById("a1").innerHTML=n1;
+        }
+            
+        function s2(){
+            var n2=n.toFixed(2);
+            document.getElementById("a2").innerHTML=n2;
+        }
+            
+        function s3(){
+            var n3=n.toFixed(3);
+            document.getElementById("a3").innerHTML=n3;
+        }
+        </script>
+    </body>
+</html>
