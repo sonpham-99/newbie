@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <h1>Reduce đổi mảng thành một giá trị đơn giản</h1>
+        
+        <button onClick="kq1()">Trừ</button>
+        <p id = "d1"></p>
+        
+        <button onClick="kq2()">Cộng</button>
+        <p id = "d2"></p>
+        
+        <script>
+            var n = [50, 10, 3];
+            document.getElementById("d1").innerHTML=n;
+            document.getElementById("d2").innerHTML=n;
+            
+            function tru(total, num){
+                return total - num;
+            }
+            
+            function kq1(){
+                document.getElementById("d1").innerHTML = n.reduce(tru);
+            }
+            
+            function cong(total, num){
+                return total + num;
+            }
+            
+            function kq2(){
+                document.getElementById("d2").innerHTML = n.reduce(cong);
+            }
+        </script>
+    </body>
+</html>
