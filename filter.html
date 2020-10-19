@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>Filter</h1>
+        
+        <p>100, 9, 58, 76, 88</p>
+        Các số lớn hơn hoặc bằng 60<br>
+        <button onClick="kq()">Nhấn nào</button>
+        <p id = "d1"></p>
+        
+        <script>
+        var so = [100,9,58,76,88];
+        
+            
+        function kiemtra(num){
+            return num >= 60;
+        }
+            
+        function kq(){
+            document.getElementById("d1").innerHTML = so.filter(kiemtra);
+        }
+        </script>
+    </body>
+</html>
